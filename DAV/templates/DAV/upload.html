@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<section id="about" style="background-color:#fff; color:#a3a3a3;">
+    <h2 class="text-uppercase">Upload Your Data</h2>
+    <form method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit" class="btn btn-primary">Upload File</button>
+    </form>
+
+
+
+  </section>
+
+{% endblock %}

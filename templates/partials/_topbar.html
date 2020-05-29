@@ -1,0 +1,34 @@
+<!-- NAVBAR -->
+<nav class="navbar bg-dark navbar-dark navbar-expand-sm mt3 fixed-top ">
+    <div class="container ">
+        <div id="logo-box">
+          <a href="{% url 'index' %}" class="navbar-brand ">
+          WADAV
+        </a>
+        </div>
+
+        <div class="responsive" id="nav-links">
+          <ul class="nav navbar-nav">
+            <li class="nav-item">
+              <a href="{% url 'index' %}#" class="nav-link text-uppercase nav-icon">
+                <i class="fas fa-bars"></i>
+               </a>
+            </li>
+            <li class="nav-item">
+              <a href="{% url 'index' %}#analysis" class="nav-link text-uppercase">Home</a>
+            </li>
+            <li class="nav-item">
+            <a href="{% url 'upload' %}" class="nav-link text-uppercase">Analysis</a>
+            </li>
+            <li class="nav-item">
+              <a href="{% url 'index' %}#about" class="nav-link text-uppercase">About</a>
+            </li>
+
+
+
+
+
+
+        </div>
+    </div>
+ </nav>
